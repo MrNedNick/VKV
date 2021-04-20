@@ -11,6 +11,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 
 <body>
@@ -51,23 +57,36 @@
     <section class="about">
         <div class="about__inner">
             <div class="about__top clearfix">
-                <h2 class="about__tittle ">About us</h2>
-                <p class="about__text about__text_right">
+
+                <h2 class="about__tittle wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s"
+                    >About us</h2>
+
+                <p class="about__text about__text_right wow animate__animated animate__fadeIn" data-wow-duration="1.5s"
+                    data-wow-delay="1s">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada ut urna, semper
-                    tristique elementum scelerisque nullam. Augue ultrices ultrices mattis leo et urna tincidunt.<br><br>
+                    tristique elementum scelerisque nullam. Augue ultrices ultrices mattis leo et urna
+                    tincidunt.<br><br>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada ut urna, semper tristique
                     elementum
                     scelerisque nullam. Augue ultrices ultrices mattis leo et urna tincidunt.
                 </p>
             </div>
+
             <div class="about__bottom clearfix">
-                <img src="images/about.jpg" alt="About" class="about__img">
-                <p class="about__text about__text_left">
+
+                <div class="wow animate__animated animate__fadeIn" 
+                data-wow-duration="1.5s"
+                data-wow-delay="0.5s">
+                    <img src=" images/about.jpg" alt="About" class="about__img">
+                </div>
+
+                <p class="about__text about__text_left wow animate__animated animate__fadeIn" data-wow-duration="1.5s"
+                data-wow-delay="1s" >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada ut urna, semper tristique
                     elementum
                     scelerisque nullam. Augue ultrices ultrices mattis leo et urna tincidunt.
                 </p>
-                
+
             </div>
         </div>
     </section>
@@ -75,7 +94,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="js/nav.js"></script>
-    <script src="js/animation.js"></script>
+    <!-- <script src="js/animation.js"></script> -->
+
+
 
 </body>
 
