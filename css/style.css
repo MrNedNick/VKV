@@ -25,6 +25,7 @@ body {
 .header {
     margin: 0 auto;
     max-width: 1080px;
+    
 }
 
 .header__inner {
@@ -144,6 +145,10 @@ body {
 }
 
 /* About */
+
+.about.fixed {
+    padding-top: 100px;
+}
 
 .about {
     height: 1500px;
