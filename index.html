@@ -12,9 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -31,11 +29,17 @@
 
             <div class="header__animation_wrapper">
                 <a href="#" class="header__animation_link">
-                    <div data-poster-url="https://assets.website-files.com/5ff32b292fb4b1052d23b4a5/6000e1c35d6106da401cdc94_Einweihungsparty-2-poster-00001.jpg" data-video-urls="https://assets.website-files.com/5ff32b292fb4b1052d23b4a5/6000e1c35d6106da401cdc94_Einweihungsparty-2-transcode.mp4,https://assets.website-files.com/5ff32b292fb4b1052d23b4a5/6000e1c35d6106da401cdc94_Einweihungsparty-2-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" 
-                    class="header__video">
-                        <video width="1000" height="1000" autoplay="" loop="" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
-                            <source src="https://assets.website-files.com/5ff32b292fb4b1052d23b4a5/6000e1c35d6106da401cdc94_Einweihungsparty-2-transcode.mp4" data-wf-ignore="true" />
-                            <source src="https://assets.website-files.com/5ff32b292fb4b1052d23b4a5/6000e1c35d6106da401cdc94_Einweihungsparty-2-transcode.webm" data-wf-ignore="true" />
+                    <div data-poster-url="https://assets.website-files.com/5ff32b292fb4b1052d23b4a5/6000e1c35d6106da401cdc94_Einweihungsparty-2-poster-00001.jpg"
+                        data-video-urls="https://assets.website-files.com/5ff32b292fb4b1052d23b4a5/6000e1c35d6106da401cdc94_Einweihungsparty-2-transcode.mp4,https://assets.website-files.com/5ff32b292fb4b1052d23b4a5/6000e1c35d6106da401cdc94_Einweihungsparty-2-transcode.webm"
+                        data-autoplay="true" data-loop="true" data-wf-ignore="true" class="header__video">
+                        <video width="1000" height="1000" autoplay="" loop="" muted="" playsinline=""
+                            data-wf-ignore="true" data-object-fit="cover">
+                            <source
+                                src="https://assets.website-files.com/5ff32b292fb4b1052d23b4a5/6000e1c35d6106da401cdc94_Einweihungsparty-2-transcode.mp4"
+                                data-wf-ignore="true" />
+                            <source
+                                src="https://assets.website-files.com/5ff32b292fb4b1052d23b4a5/6000e1c35d6106da401cdc94_Einweihungsparty-2-transcode.webm"
+                                data-wf-ignore="true" />
                         </video>
                     </div>
                 </a>
@@ -52,7 +56,7 @@
 
             <div class="header__main_wrap scaleble-bg"></div>
 
-           
+
         </div>
     </header>
 
@@ -74,11 +78,9 @@
         <div class="about__inner">
             <div class="about__top clearfix">
 
-                <h2 class="about__tittle wow animate__animated animate__fadeIn" data-wow-duration="1.5s"
-                    data-wow-delay="0.5s">About us</h2>
+                <h2 class="about__tittle" data-aos="fade-in">About us</h2>
 
-                <p class="about__text about__text_right wow animate__animated animate__fadeIn" data-wow-duration="1.5s"
-                    data-wow-delay="1s">
+                <p class="about__text about__text_right" data-aos="fade-in">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada ut urna, semper
                     tristique elementum scelerisque nullam. Augue ultrices ultrices mattis leo et urna
                     tincidunt.<br><br>
@@ -90,12 +92,11 @@
 
             <div class="about__bottom clearfix">
 
-                <div class="wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                <div class="" data-aos="fade-in">
                     <img src=" images/about.jpg" alt="About" class="about__img">
                 </div>
 
-                <p class="about__text about__text_left wow animate__animated animate__fadeIn" data-wow-duration="1.5s"
-                    data-wow-delay="1s">
+                <p class="about__text about__text_left" data-aos="fade-in">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada ut urna, semper tristique
                     elementum
                     scelerisque nullam. Augue ultrices ultrices mattis leo et urna tincidunt.
@@ -104,17 +105,15 @@
             </div>
         </div>
     </section>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- header bg -->
     <script src="js/header.js"></script>
     <!-- fixed nav -->
     <script src="js/nav.js"></script>
     <!-- text animation -->
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/animation.js"></script>
 
 
 </body>
