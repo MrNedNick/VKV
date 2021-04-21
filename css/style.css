@@ -200,6 +200,10 @@ body {
     margin-left: 25px;
 }
 
+.nav__item:hover {
+    text-decoration: underline;
+}
+
 /* nav-toggle */
 
 .nav__toggle {
