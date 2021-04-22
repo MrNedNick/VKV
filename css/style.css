@@ -362,6 +362,17 @@ body {
     height: 324px;
 }
 
+@media (max-width: 960px) {
+    .header__suptittle {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .header__tittle_span {
+        font-size: 40px;
+        line-height: 64px;
+    }
+}
+
 @media (max-width: 414px) {
     body {
         font-size: 16px;
@@ -369,7 +380,6 @@ body {
     }
     /* header */
     .header__inner {
-        /* min-height: 736px; */
         max-width: 414px;
     }
     .header__top_inner {
@@ -385,8 +395,8 @@ body {
     .header__animation {
         margin: 0;
         width: 100%;
-    height: auto;
-    max-height: 100%;
+        height: auto;
+        max-height: 100%;
     }
     /* main */
     .header__main {
@@ -410,7 +420,6 @@ body {
         max-height: 250px;
         width: 50%;
         height: 50%;
-        
     }
     .header__arrow {
         margin-bottom: 10px;
