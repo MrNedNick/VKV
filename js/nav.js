@@ -14,7 +14,6 @@ $(function() {
         
 });
 
-
     function checkScroll () {
         if(scrollOffset >= headerH) {
             nav.addClass("fixed");
@@ -41,7 +40,6 @@ $(function() {
         
 });
 
-
     function checkScroll () {
         if(scrollOffset >= headerH) {
             about.addClass("fixed");
@@ -50,32 +48,25 @@ $(function() {
         }
     }
 
-
-
-        // smooth scroll
-    $("[data-scroll]").on("click", function(event) {
-        event.preventDefault();
-
-        let $this = $(this),
-            blockId = $this.data('scroll'),
-            blockOffset = $(blockId).offset().top;
-
-        $("html, body").animate({
-            scrollTop: blockOffset
-        }, 500);
-    });
-
-    // menu nav Toggle
-    $('#nav_toggle').on("click", function(event) {
-        event.preventDefault();
-
-        $(this).toggleClass("active");
-        $('#nav__items').toggleClass("active");
-    });
-
 });
 
+// smooth scroll
+$("[data-scroll]").on("click", function(event) {
+    event.preventDefault();
 
+    let $this = $(this),
+        blockId = $this.data('scroll'),
+        blockOffset = $(blockId).offset().top;
 
+    $("html, body").animate({
+        scrollTop: blockOffset
+    }, 500);
+});
 
+// menu nav Toggle
+$('#nav_toggle').on("click", function(event) {
+    event.preventDefault();
 
+    $(this).toggleClass("active");
+    $('#nav__items').toggleClass("active");
+});
