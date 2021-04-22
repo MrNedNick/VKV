@@ -100,7 +100,7 @@ body {
 .header__main {
     position: absolute;
     margin: auto;
-    top: 30%;
+    top: 22%;
     left: 0;
     right: 0;
     border-top: 1px solid transparent;
@@ -399,9 +399,11 @@ body {
         max-height: 100%;
     }
     /* main */
-
+    .header__main {
+        top: 27%;
+    }
     .header__suptittle {
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         font-size: 18px;
         line-height: 25px;
     }
