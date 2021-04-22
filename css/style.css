@@ -399,10 +399,7 @@ body {
         max-height: 100%;
     }
     /* main */
-    .header__main {
-        margin: auto;
-        top: 250px;
-    }
+
     .header__suptittle {
         margin-bottom: 15px;
         font-size: 18px;
