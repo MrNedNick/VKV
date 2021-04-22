@@ -100,7 +100,7 @@ body {
 .header__main {
     position: absolute;
     margin: auto;
-    top: 250px;
+    top: 30%;
     left: 0;
     right: 0;
     border-top: 1px solid transparent;
@@ -150,12 +150,14 @@ body {
     justify-content: center;
     position: absolute;
     margin: auto;
-    top: 250px;
+    top: 25%;
     left: 0;
     right: 0;
     background-color: #FFFFFF;
-    width: 525px;
-    height: 525px;
+    max-width: 525px;
+    max-height: 525px;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
     z-index: 10;
 }
@@ -403,9 +405,12 @@ body {
         line-height: 64px;
     }
     .header__cercle {
-        top: 75px;
-        width: 250px;
-        height: 250px;
+        top: 25%;
+        max-width: 250px;
+        max-height: 250px;
+        width: 50%;
+        height: 50%;
+        
     }
     .header__arrow {
         margin-bottom: 10px;
