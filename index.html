@@ -23,7 +23,7 @@
             <div class="header__top">
                 <div class="header__top_inner">
                     <img class="header__logo" src="images/logo.png" alt="Logo">
-                    <a class="header__menu" href="#">Menu</a>
+                    <a class="header__menu" href="#" data-scroll="#nav">Menu</a>
                 </div>
             </div>
 
@@ -42,13 +42,13 @@
                 </div>
 
                 <div class="header__cercle">
-                    <div class="header__arrow"></div>
+                    <div class="header__arrow" data-scroll="#nav"></div>
                 </div>
             </div>
         </div>
 
         <div class="header__main">
-            <a href="#" class="header__main_link">
+            <a href="#" class="header__main_link" data-scroll="#nav">
                 <h2 class="header__suptittle">VKV Agency</h2>
                 <span class="header__tittle_span">Take your time - use</span>
                 <span class="header__tittle_span">our services</span>
@@ -57,11 +57,11 @@
 
     </header>
 
-    <div class="nav" id="nav">
+    <div class="nav " id="nav">
         <div class="nav__inner">
             <a href="#"><img class="nav__logo" src="images/logo-white.png" alt="Logo"></a>
             <nav class="nav__items" >
-                <a href="#" class="nav__item">About</a>
+                <a href="#" class="nav__item" data-scroll="#nav">About</a>
                 <a href="#" class="nav__item">Capabilities</a>
                 <a href="#" class="nav__item">Agent’s Reward</a>
                 <a href="#" class="nav__item">Logistic</a>
@@ -69,9 +69,9 @@
                 <a href="#" class="nav__item">Contacts</a>
             </nav>
 
-            <div class="nav__toggle">
-                <span class="nav__toggle_item"></span>
-            </div>
+            <button class="nav__toggle " type="button">
+                <span class="nav__toggle_item">Menu</span>
+            </button>
         </div>
     </div>
 

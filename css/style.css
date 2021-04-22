@@ -77,10 +77,6 @@ body {
 /* video */
 
 .header__animation {
-    /* position: absolute;
-    top: -100px;
-    left: 0;
-    right: 0; */
     margin: auto;
     border: 1px solid transparent;
     border-radius: 50%;
@@ -164,7 +160,8 @@ body {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 10000;
+    z-index: 10000; 
+    transform: translate3d(0, 0, 0);
 }
 
 .nav {
@@ -198,10 +195,13 @@ body {
     color: #FFFFFF;
     text-decoration: none;
     margin-left: 25px;
+
+    transition: all 0.2s ease;
 }
 
 .nav__item:hover {
     text-decoration: underline;
+    color: #ffffffca;
 }
 
 /* nav-toggle */
@@ -215,6 +215,13 @@ body {
     width: 26px;
     padding: 10px 0;
     padding-right: 15px;
+
+    font-size: 0;
+    color: transparent;
+
+    border: 0;
+    background: none;
+    cursor: pointer;
     
 }
 
@@ -231,7 +238,15 @@ body {
     bottom: 0;
     margin: auto;
     border-radius: 1px;
+
+    transition: background 0.2s linear;
 }
+
+.nav__toggle.active .nav__toggle_item {
+    background: none;
+}
+
+
 
 .nav__toggle_item:before{
     content: "";
@@ -245,6 +260,8 @@ body {
     top: -8px;
     z-index: 1;
     border-radius: 1px;
+
+    transition: transform 0.2s linear;
 }
 
 .nav__toggle_item:after {
@@ -260,6 +277,20 @@ body {
 
     bottom: -8px;
     border-radius: 1px;
+
+    transition: transform 0.2s linear;
+
+}
+
+.nav__toggle.active .nav__toggle_item:before{
+    transform-origin: left top;
+    transform: rotate(45deg) translateX(-1px);
+}
+
+.nav__toggle.active .nav__toggle_item:after{
+    width: 100%;
+    transform-origin: left bottom;
+    transform: rotate(-45deg) translateX(-1px);
 }
 
 /* About */
@@ -380,13 +411,30 @@ body {
     }
     /* Nav */
     
-    
+
     
     .nav__logo {
         margin-left: 15px;
     }
+
     .nav__items {
         display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        background-color: #000;
+    }
+
+    .nav__items.active {
+        display: block;
+    }
+
+    .nav__item {
+        display: block;
+        margin: 0;
+        padding: 8px 20px;
     }
 
     /* nav-toggle */
